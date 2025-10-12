@@ -50,8 +50,8 @@ def replicate_until_60(data_folder):
 
         # final count
         total_files = len([f for f in os.listdir(category_path) if f.endswith(".csv")])
-        print(f"✅ Finished {category}: {total_files} total files, size: {get_folder_size(category_path)/1024:.2f} KB")
+        print(f" Finished {category}: {total_files} total files, size: {get_folder_size(category_path)/1024:.2f} KB")
 
 # Example usage
-data_folder = r"C:\Users\ayomi\Documents\rawdata_spring2025\data\processed"
+data_folder = r"C:\Users\ayomi\Documents\rawdata_spring2025-20251004T004727Z-1-001"
 replicate_until_60(data_folder)
